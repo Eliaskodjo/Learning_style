@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Learning Styles Inventory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>🎓 Online Learning Styles Inventory for Adult Learners</h1>
+      <p class="intro">
+        This inventory helps you discover your preferred learning style to enhance your educational experience.
+        By understanding how you learn best, you can tailor your study strategies for greater effectiveness.
+      </p>
+      <div class="instructions">
+        <h2>Instructions</h2>
+        <ul>
+          <li>Answer each question honestly based on your preferences.</li>
+          <li>There are no right or wrong answers.</li>
+          <li>Select the option that best describes your learning habits.</li>
+        </ul>
+      </div>
+    </header>
+
+    <form id="quizForm">
+
+      <section>
+        <h2>Section 1: Learning Preferences</h2>
+
+        <div class="question">
+          <p>1. When learning something new, I prefer:</p>
+          <label><input type="radio" name="q1" value="A" required> Watching a video or demonstration</label>
+          <label><input type="radio" name="q1" value="B"> Listening to a lecture or podcast</label>
+          <label><input type="radio" name="q1" value="C"> Reading a book or article</label>
+          <label><input type="radio" name="q1" value="D"> Trying it out hands-on</label>
+        </div>
+
+        <div class="question">
+          <p>2. I remember information best when I:</p>
+          <label><input type="radio" name="q2" value="A" required> See charts, diagrams, or images</label>
+          <label><input type="radio" name="q2" value="B"> Hear someone explain it</label>
+          <label><input type="radio" name="q2" value="C"> Read and take notes</label>
+          <label><input type="radio" name="q2" value="D"> Practice or apply it in real life</label>
+        </div>
+
+        <div class="question">
+          <p>3. When studying, I find it most helpful to:</p>
+          <label><input type="radio" name="q3" value="A" required> Use color-coding, mind maps, or flashcards</label>
+          <label><input type="radio" name="q3" value="B"> Discuss concepts with others or listen to explanations</label>
+          <label><input type="radio" name="q3" value="C"> Read and summarize in my own words</label>
+          <label><input type="radio" name="q3" value="D"> Do exercises, experiments, or role-playing</label>
+        </div>
+
+        <div class="question">
+          <p>4. If I need directions, I prefer:</p>
+          <label><input type="radio" name="q4" value="A" required> A map or visual guide</label>
+          <label><input type="radio" name="q4" value="B"> Someone telling me step-by-step</label>
+          <label><input type="radio" name="q4" value="C"> Written instructions</label>
+          <label><input type="radio" name="q4" value="D"> Just trying it out and adjusting as I go</label>
+        </div>
+
+        <div class="question">
+          <p>5. In a group project, I contribute best by:</p>
+          <label><input type="radio" name="q5" value="A" required> Creating visual aids or presentations</label>
+          <label><input type="radio" name="q5" value="B"> Explaining ideas verbally</label>
+          <label><input type="radio" name="q5" value="C"> Writing reports or organizing notes</label>
+          <label><input type="radio" name="q5" value="D"> Taking a hands-on role in building or executing tasks</label>
+        </div>
+      </section>
+
+      <section>
+        <h2>Section 2: Learning Environment</h2>
+
+        <div class="question">
+          <p>I learn better when I can see examples and visuals:</p>
+          <div class="likert">
+            <label><input type="radio" name="s1" value="1" required>1 (Strongly Disagree)</label>
+            <label><input type="radio" name="s1" value="2">2</label>
+            <label><input type="radio" name="s1" value="3">3</label>
+            <label><input type="radio" name="s1" value="4">4</label>
+            <label><input type="radio" name="s1" value="5">5 (Strongly Agree)</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <p>I retain information best through discussions and verbal explanations:</p>
+          <div class="likert">
+            <label><input type="radio" name="s2" value="1" required>1</label>
+            <label><input type="radio" name="s2" value="2">2</label>
+            <label><input type="radio" name="s2" value="3">3</label>
+            <label><input type="radio" name="s2" value="4">4</label>
+            <label><input type="radio" name="s2" value="5">5</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <p>I prefer reading and writing to absorb new concepts:</p>
+          <div class="likert">
+            <label><input type="radio" name="s3" value="1" required>1</label>
+            <label><input type="radio" name="s3" value="2">2</label>
+            <label><input type="radio" name="s3" value="3">3</label>
+            <label><input type="radio" name="s3" value="4">4</label>
+            <label><input type="radio" name="s3" value="5">5</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <p>I need to physically engage with material to understand it fully:</p>
+          <div class="likert">
+            <label><input type="radio" name="s4" value="1" required>1</label>
+            <label><input type="radio" name="s4" value="2">2</label>
+            <label><input type="radio" name="s4" value="3">3</label>
+            <label><input type="radio" name="s4" value="4">4</label>
+            <label><input type="radio" name="s4" value="5">5</label>
+          </div>
+        </div>
+
+      </section>
+
+      <button type="button" onclick="calculateResults()">Submit</button>
+    </form>
+
+    <div id="results" class="hidden"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
